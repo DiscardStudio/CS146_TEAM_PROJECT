@@ -5,6 +5,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
+    <link rel="script" href="scripts.js">
     <title>DuckLend</title>
     </head> 
     <header>
@@ -18,6 +19,11 @@
       </nav>
     </header>
     <body>
+      <div id="bForm">
+        <form>
+          
+        </form>
+    </div>
       <h1>DuckLend</h1>
     <div class="item-post">
         <img src="bio.jpg" alt="Book" class="image">
@@ -27,6 +33,7 @@
           <p>
            You will need this for Biology and Biotechnology
           </p>
+          <button id="buyBtn" onclick='form("Science Book")'>Buy/Rent now</button>
         </div>
         
       </div>
@@ -38,29 +45,31 @@
             <p>
                 You will need this for Calculus
             </p>
+            <button id="buyBtn" onclick='form("Math Book")'>Buy/Rent now</button>
         </div>
 
       </div>
       <div class="item-post">
             <img src="english.jpg" alt="English book" class="image">
             <div class="item-info">
-                    <h3>English Book</h3>
-                    <h4 class="money">$12 per month</h4>
-                    <p>
-                        You will need this for English
-                    </p>
+              <h3>English Book</h3>
+              <h4 class="money">$12 per month</h4>
+              <p>
+                  You will need this for English
+              </p>
+              <button id="buyBtn" onclick='form("Math Book")'>Buy/Rent now</button>
             </div>
         </div>
         <div class="item-post">
           <img src="cs.jpg" alt="Cs book" class="image">
           <div class="item-info">
-                <h3>Computer Science Book</h3>
-                <h4 class="money">$3 per month</h4>
-                <p>
-                    You will need this for Computer Science
-                </p>
+            <h3>Computer Science Book</h3>
+            <h4 class="money">$3 per month</h4>
+            <p>
+              You will need this for Computer Science
+          </p>
+          <button id="buyBtn" onclick='form("Math Book")'>Buy/Rent now</button>
         </div>
     </div>
-
   </body>
 </html>
