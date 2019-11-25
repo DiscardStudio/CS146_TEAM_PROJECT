@@ -50,12 +50,10 @@ h2{
 .image{
     height: 200px;
     width: 200px;
+    margin: 10px;
 }
 
-div.bForm{
-    background-color: maroon;
-    border-color: black;
-    border: 5px;
-    box-shadow: 5px;
-    position:fixed;
+.fixedForm{
+    visibility: hidden;
+    
 }

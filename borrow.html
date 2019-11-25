@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
-    <link rel="script" href="scripts.js">
+    <script type="text/javascript" src="scripts.js"></script>
     <title>DuckLend</title>
-    </head> 
+  </head> 
     <header>
       <nav>
           <ul>
@@ -19,9 +19,9 @@
       </nav>
     </header>
     <body>
-      <div id="bForm">
+      <div class="bForm">
         <form>
-          
+          <h4 class="bFor">DuckLend</h2>
         </form>
     </div>
       <h1>DuckLend</h1>
@@ -33,7 +33,7 @@
           <p>
            You will need this for Biology and Biotechnology
           </p>
-          <button id="buyBtn" onclick='form("Science Book")'>Buy/Rent now</button>
+          <button id="buyBtn" onclick='formOpen("Science Book")'>Buy/Rent now</button>
         </div>
         
       </div>
@@ -45,7 +45,7 @@
             <p>
                 You will need this for Calculus
             </p>
-            <button id="buyBtn" onclick='form("Math Book")'>Buy/Rent now</button>
+            <button id="buyBtn" onclick='formOpen("Math Book")'>Buy/Rent now</button>
         </div>
 
       </div>
@@ -57,7 +57,7 @@
               <p>
                   You will need this for English
               </p>
-              <button id="buyBtn" onclick='form("Math Book")'>Buy/Rent now</button>
+              <button id="buyBtn" onclick='formOpen("English Book")'>Buy/Rent now</button>
             </div>
         </div>
         <div class="item-post">
@@ -68,7 +68,7 @@
             <p>
               You will need this for Computer Science
           </p>
-          <button id="buyBtn" onclick='form("Math Book")'>Buy/Rent now</button>
+          <button id="buyBtn" onclick='formOpen("Computer Science Book")'>Buy/Rent now</button>
         </div>
     </div>
   </body>

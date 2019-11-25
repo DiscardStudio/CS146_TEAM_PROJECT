@@ -1,6 +1,6 @@
 
 
-function form(bName)
+function formOpen(bName)
 {
-    document.getElementById("bForm").style.visibility="Visible";
+    document.getElementsByClassName("fixedForm").style.visibility=visible;
 }
