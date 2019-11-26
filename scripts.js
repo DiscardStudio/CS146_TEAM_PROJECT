@@ -20,13 +20,19 @@ var form2 = () =>
     <select id=\"cardtype\"><option>MasterCard</option><option>Visa</option></select><br>\
     Card Number: <input type=\"number\" id=\"cn\"><br>\
     Security Code: <input type=\"number\"><br>\
-    Billing Address: <input type=\"text\"><br>\
+    Billing Address: <input type=\"text\" id=\"ba\"><br>\
     Zip Code: <input type=\"number\"><br>\
     State: <input type=\"text\"><br>\
     City/Town: <input type=\"text\"><br>\
-    <button id=\"Submit\" "+((formchange()!="Choose a book")? "":"disabled=\"true\"")+">Submit</button>":
+    <button onclick=\"subm()\" id=\"Submit\" "+((formchange()!="Choose a book")? "":"disabled=\"true\"")+">Submit</button>":
     (v==1)? "<h5>Email <a href=\"mailto:ducklend@gmail.com\">DuckLend@gmail.com</a> to find out if your<br>payment method is acceptable</h5>":
     "Select payment method:<br>\
     <input type=\"radio\" name=\"payment\" value=0>Debit/Credit<br>\
     <input type=\"radio\" name=\"payment\" value=1>Other";
+}
+
+var subm = () => 
+{
+    if(document.getElementById("Submit").value=="submit")
+        document.getElementById("sent").innerHTML="Great! It will be sent to: "+document.getElementById("ba").value;
 }
