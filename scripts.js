@@ -25,14 +25,13 @@ var form2 = () =>
     State: <input type=\"text\"><br>\
     City/Town: <input type=\"text\"><br>\
     <button onclick=\"subm()\" id=\"Submit\" "+((formchange()!="Choose a book")? "":"disabled=\"true\"")+">Submit</button>":
-    (v==1)? "<h5>Email <a href=\"mailto:ducklend@gmail.com\">DuckLend@gmail.com</a> to find out if your<br>payment method is acceptable</h5>":
-    "Select payment method:<br>\
-    <input type=\"radio\" name=\"payment\" value=0>Debit/Credit<br>\
-    <input type=\"radio\" name=\"payment\" value=1>Other";
+    "<h5>Email <a href=\"mailto:ducklend@gmail.com\">DuckLend@gmail.com</a> to find out if your<br>payment method is acceptable</h5>";
 }
 
-var subm = () => 
+function subm()
 {
-    if(document.getElementById("Submit").value=="submit")
-        document.getElementById("sent").innerHTML="Great! It will be sent to: "+document.getElementById("ba").value;
+    document.getElementById("sent").innerHTML="Great! It will be sent to: "+document.getElementById("ba").value;
+    document.getElementById("swap").innerHTML="Select payment method:<br>\
+    <input type=\"radio\" name=\"payment\" value=0>Debit/Credit<br>\
+    <input type=\"radio\" name=\"payment\" value=1>Other";
 }

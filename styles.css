@@ -78,3 +78,8 @@ h6 {
 input, form{
     margin: 5px;
 }
+
+p1 {
+    font-size: 16px;
+    color: rgb(229, 255, 0);
+}
