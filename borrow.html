@@ -19,9 +19,23 @@
       </nav>
     </header>
     <body>
-      <div class="fixedForm">
-        
-      </div>
+      <section class="fixedForm">
+        <h5>DuckLend: Purchase</h5>
+        <select onchange="formchange()" id="Dropdown">
+          <option>Choose a book</option>
+          <option>Science book</option>
+          <option>Math book</option>
+          <option>English book</option>
+          <option>Computer Science book</option>
+        </select>
+        <br>
+        <h6 id="Price"></h6>
+        <form id="swap" onchange="form2()">
+          Select payment method:<br>
+          <input type="radio" name="payment" value=0>Debit/Credit<br>
+          <input type="radio" name="payment" value=1>Other
+        </form>
+      </section>
       <h1>DuckLend</h1>
     <div class="item-post">
         <img src="bio.jpg" alt="Book" class="image">
@@ -31,7 +45,6 @@
           <p>
            You will need this for Biology and Biotechnology
           </p>
-          <button id="buyBtn" onclick='formOpen("Science Book")'>Buy/Rent now</button>
         </div>
         
       </div>
@@ -43,7 +56,6 @@
             <p>
                 You will need this for Calculus
             </p>
-            <button id="buyBtn" onclick='formOpen("Math Book")'>Buy/Rent now</button>
         </div>
 
       </div>
@@ -55,7 +67,6 @@
               <p>
                   You will need this for English
               </p>
-              <button id="buyBtn" onclick='formOpen("English Book")'>Buy/Rent now</button>
             </div>
         </div>
         <div class="item-post">
@@ -66,7 +77,6 @@
             <p>
               You will need this for Computer Science
           </p>
-          <button id="buyBtn" onclick='formOpen("Computer Science Book")'>Buy/Rent now</button>
         </div>
     </div>
   </body>
