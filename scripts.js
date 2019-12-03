@@ -1,5 +1,9 @@
-
-
+document.addEventListener("DOMContentLoaded",init);
+function init()
+{
+    document.getElementById("Dropdown").addEventListener("change",formchange,false);
+    document.getElementById("swap").addEventListener("change",form2,false);
+}
 function formchange()
 {
     var book=document.getElementById("Dropdown").value;
@@ -13,7 +17,6 @@ function formchange()
 var form2 = () =>
 {
     var v=document.querySelector('input[name="payment"]:checked').value;
-    console.log(v);
     document.getElementById("swap").innerHTML=
     (v==0)? "Last Name: <input type=\"text\" id=\"ln\"><br>\
     First Name: <input type=\"text\" id=\"First\"><br>\
@@ -24,8 +27,9 @@ var form2 = () =>
     Zip Code: <input type=\"number\"><br>\
     State: <input type=\"text\"><br>\
     City/Town: <input type=\"text\"><br>\
-    <button onclick=\"subm()\" id=\"Submit\" "+((formchange()!="Choose a book")? "":"disabled=\"true\"")+">Submit</button>":
+    <button id=\"Submit\" "+((formchange()!="Choose a book")? "":"disabled=\"true\"")+">Submit</button>":
     "<h5>Email <a href=\"mailto:ducklend@gmail.com\">DuckLend@gmail.com</a> to find out if your<br>payment method is acceptable</h5>";
+    document.getElementById("Submit").addEventListener("click",subm);
 }
 
 function subm()
